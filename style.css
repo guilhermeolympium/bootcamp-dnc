@@ -1,19 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap');
 
 :root {
+    --fonte-padrao: 'Inter', sans-serif;
+
     --azul-dnc: #0C70F2;
     --preto-dnc: #303030;
     --cinza-hover: #C9C9C9;
-    
-    --fonte-padrao: 'Inter', sans-serif;
 }
 
 * {
+    font-family: var(--fonte-padrao);
+
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-
-    font-family: var(--fonte-padrao);
 }
 
 body {
@@ -24,13 +24,12 @@ body {
 #menu-principal {
     width: 100%;
     height: 100px;
-
     background-color: var(--preto-dnc);
+    border-bottom: solid 1px #BABABA;
+
     font-size: 25px;
     font-weight: 600;
     color: #FFFFFF;
-
-    border-bottom: solid 1px #BABABA;
 }
 
 #menu-principal div a {
@@ -54,22 +53,23 @@ nav {
     display: flex;
     justify-content: space-around;
     align-items: center;
+
     width: 55%;
 }
 
 #menu-principal button {
-    background-color: var(--azul-dnc);
-    margin-right: 5%;
-    border: 0;
-    height: 40px;
-    width: 80px;
-    cursor: pointer;
-
     font-size: 20px;
     font-weight: 600;
     color: #FFFFFF;
 
+    width: 80px;
+    height: 40px;
+    background-color: var(--azul-dnc);
+    border: 0;
     box-shadow: 3px 2px 4px rgba(12, 112, 242, 0.25);
+    margin-right: 5%;
+
+    cursor: pointer;
 }
 
 section {
@@ -102,16 +102,16 @@ header h2 {
 }
 
 header .invert {
-    background-color: #000000;
-
     font-weight: 700;
+
+    background-color: #000000;
 }
 
 form {
-    color: #FFFFFF;
-
     font-size: 30px;
+    color: #FFFFFF;
     font-weight: 600;
+
     width: 600px;
 }
 
@@ -127,13 +127,14 @@ form label {
 }
 
 form input {
-    border-radius: 10px;
-    height: 50px;
-    border: 0;
-    background-color: rgba(255, 255, 255, 0.9);
-
     font-size: 20px;
+
+    height: 50px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    border: 0;
     padding: 10px;
+
 }
 
 form input::placeholder {
@@ -155,15 +156,14 @@ input[type="checkbox"] {
 }
 
 input[type="submit"] {
-    background: rgba(12, 112, 242, 0.9);
-    box-shadow: 0px 6px 4px rgba(12, 112, 242, 0.25);
-    border-radius: 10px;
+    font-size: 36px;
+    color: #FFFFFF;
 
     width: 100%;
     height: 55px;
-
-    font-size: 36px;
-    color: #FFFFFF;
+    background: rgba(12, 112, 242, 0.9);
+    box-shadow: 0px 6px 4px rgba(12, 112, 242, 0.25);
+    border-radius: 10px;
 
     margin-top: 100px;
 
