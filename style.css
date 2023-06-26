@@ -291,4 +291,13 @@ footer .linha2 a:hover {
         width: 85%;
         font-size: 20px;
     }
+
+    footer .linha1 {
+        flex-direction: column;
+    }
+
+    footer .endereco {
+        width: 85%;
+    }
+    
 }
