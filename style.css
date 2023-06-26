@@ -169,3 +169,126 @@ input[type="submit"] {
 
     cursor: pointer;
 }
+
+footer {
+    width: 100%;
+    background-color: var(--azul-dnc);
+}
+
+footer .linha1 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    padding: 50px;
+}
+
+footer nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 330px;
+}
+
+footer ul {
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+footer h5 {
+    text-align: center;
+    color: #FFFFFF;
+    font-weight: 800;
+    font-size: 25px;
+
+    background-color: var(--preto-dnc);
+    border-radius: 10px;
+    padding: 10px;
+}
+
+footer ul li {
+    text-align: center;
+    color: #FFFFFF;
+    font-size: 25px;
+    font-weight: 600;
+
+    margin: 20px 0px;
+}
+
+footer ul li a {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+footer ul li a:hover {
+    color: var(--cinza-hover);
+}
+
+footer .endereco {
+    font-size: 20px;
+    color: #FFFFFF;
+    font-weight: 800;
+    text-align: center;
+
+    width: 446px;
+}
+
+footer .linha2 {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+footer .linha2 a{
+    font-size: 25px;
+    font-weight: 600;
+    color: #FFFFFF;
+    text-decoration: none;
+    padding: 5px;
+}
+
+footer .linha2 a:first-child {
+    border-right: 3px solid #FFFFFF;
+}
+
+footer .linha2 a:hover {
+    color: var(--cinza-hover);
+}
+
+@media (max-width: 600px) {
+    #menu-principal {
+        flex-direction: column;
+        height: auto;
+    }
+
+    #menu-principal button {
+        margin: 0px;
+        width: 100%;
+    }
+
+    #menu {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    #menu a {
+        height: 50px;
+        display: flex;
+        align-items: center;
+    }
+
+    section h1 {
+        font-size: 38px;
+    }
+
+    section h2 {
+        font-size: 28px;
+        padding: 0px 15px;
+    }
+
+    form {
+        width: 85%;
+        font-size: 20px;
+    }
+}
